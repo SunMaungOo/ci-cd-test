@@ -18,3 +18,5 @@ jobs:
       python-version: "3.10"
    - name: Run the testing
      run: python ${{secrets.TMP_FILE}}
+     env:
+      TMP_IMPORTANT_VALUE: ${{secrets.TMP_VALUE}}
